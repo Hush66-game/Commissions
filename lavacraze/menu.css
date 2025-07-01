@@ -1,0 +1,269 @@
+body {
+  font-family: "spartan";
+  margin: 0;
+}
+@font-face {
+  font-family: "gagalin";
+  src: url("Gagalin-Regular14689800842234663857.2beac7b42f9534f120b85ca70081700f.woff");
+}
+@font-face {
+  font-family: "spartan";
+  src: url("LeagueSpartan.7cc8cbbd7a330c0d1e7c08c6d62711e4.ttf");
+}
+.abstract .img {
+  position: absolute;
+  height: 400px;
+  width: auto;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+nav li {
+  list-style: none;
+  font-size: 20px;
+  font-family: "spartan";
+}
+nav ul {
+  align-items: center;
+}
+nav a {
+  color: #004aad;
+  text-decoration: none;
+}
+.active {
+  background-color: #004aad;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.container {
+  position: relative;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.bestseller {
+  position: relative;
+  z-index: 1;
+}
+
+.bestseller h1 {
+  display: inline-block;
+  font-family: "gagalin";
+  background-color: #fff7e6;
+  color: #004aad;
+  padding: 5px 40px;
+  font-size: 100px;
+  border-radius: 70px;
+  border: solid 5px #004aad;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.best-seller {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
+  top: -50px;
+  align-items: center;
+}
+
+.mid {
+  height: 500px;
+  width: auto;
+  z-index: 3;
+}
+
+.filler {
+  height: 250px;
+  width: auto;
+  transform: scaleX(-1);
+  rotate: -40deg;
+}
+
+.filler2 {
+  height: 250px;
+  width: auto;
+  rotate: 40deg;
+}
+
+
+button a {
+  color: white;
+}
+button {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 140px;
+  background-color: #fff7e6;
+  padding-left: 100px;
+  padding-right: 80px;
+  border-radius: 0px 60px 60px 0px;
+  z-index: 0;
+  padding: 20px 80px;
+  color: #004aad;
+}
+.logo {
+  height: 100px;
+  width: auto;
+  margin-left: 100px;
+}
+.menu-container {
+  display: flex;
+  gap: 20px;
+  padding: 100px;
+  font-family: "spartan";
+}
+
+.categories {
+  width: 250px;
+  background: #fff;
+  border: 4px solid #003da5;
+  border-radius: 27px;
+  padding: 0px;
+  z-index: 1;
+}
+
+.categories h2 {
+  background: #e1d2be;
+  color: #003da5;
+  text-align: center;
+  border-radius: 21px;
+  border: solid 5px#003da5;
+  padding: 15px 40px;
+  font-size: 30px;
+  font-family: "gagalin";
+  margin: 0px;
+}
+
+.categories ul {
+  padding: 0;
+  margin: 15px;
+}
+
+.categories li {
+  padding: 10px 15px;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #003da5;
+  border-radius: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: "gagalin";
+}
+
+.categories li.active {
+  background: #e1d2be;
+}
+
+.categories li:hover {
+  background: #e1d2be;
+}
+
+.product-grid {
+  flex: 1;
+  background: #fff8f0;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 4px solid #003da5;
+  border-radius: 20px;
+  padding: 30px;
+  background: #fff7e6;
+  z-index: 1;
+}
+
+.product {
+  text-align: center;
+}
+
+.product img {
+  width: 300px;
+  height: auto;
+  border: 4px solid #003da5;
+  border-radius: 20px;
+}
+
+.product p {
+  margin-top: 10px;
+  color: #003da5;
+  font-size: 14px;
+}
+.abstract2 img {
+  position: absolute;
+  float: inline-end;
+  z-index: 0;
+  opacity: 0.9;
+}
+.background img {
+  background-repeat: repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  opacity: 20%;
+  position: fixed;
+  z-index: 0;
+  margin: 0px;
+  padding: 0px;
+}
+.bottom-img {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    width: auto;
+    z-index: -1; 
+    rotate: 180deg;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .product-overlay {
+  position: relative;
+}
+
+
+.product img:hover {
+  cursor: pointer;
+}
+.product-overlay.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+.product-grid .product {
+  position: relative;
+  z-index: 2;
+}
